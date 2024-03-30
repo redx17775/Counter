@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #121212;
+  color: #b566ffde;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  overflow-x: hidden;
+}
+h1 {
+  text-align: center;
+  font-size: 10em;
+}
+
+.control {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-evenly;
+}
+
+.control > * {
+  background-color: #b566ffde;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 2em;
+  flex-grow: 1;
+}
+
+.control > *:hover {
+  background-color: #a94effa4;
+}
+
+@media only screen and (min-width: 800px) {
+  .control {
+    padding: 5rem;
+  }
+}
